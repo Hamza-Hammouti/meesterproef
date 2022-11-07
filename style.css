@@ -1,0 +1,143 @@
+* {
+    font-family: 'Varela Round', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: darkgrey;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+header h1 {
+    text-align: center;
+    padding-top: 2%;
+}
+
+.showGame {
+    width: 24.25%;
+    height: 400px;
+    background-color: red;
+    margin: 1% 1% 0% 0%;
+    float: left;
+    overflow: hidden;
+}
+
+.showGame_Last {
+    width: 24.25%;
+    height: 400px;
+    background-color: red;
+    margin: 1% 0% 0% 0%;
+    float: left;
+}
+
+.showDesc {
+    width: 24.25%;
+    height: 100px;
+    background-color: darkgrey;
+    margin: 1% 1% 0% 0%;
+    float: left;
+    overflow: hidden;
+    color: white;
+    box-sizing: border-box;
+    padding: 1%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.showDesc_Last {
+    width: 24.25%;
+    height: 100px;
+    background-color: darkgrey;
+    margin: 1% 0% 0% 0%;
+    float: left;
+    overflow: hidden;
+    color: white;
+    box-sizing: border-box;
+    padding: 1%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.showDesc h3 {
+    padding-left: 2%;
+}
+
+.showDesc_Last h3 {
+    padding-left: 2%;
+}
+
+.left-half {
+    height: 700px;
+    width: 50%;
+    float: left;
+    background-color: darkgrey;
+}
+
+.right-half {
+    height: 700px;
+    width: 50%;
+    float: left;
+    background-color: darkgrey;
+}
+
+.main_pic {
+    margin: 5% 0% 0% 35%;
+    height: 600px;
+    width: 52%;
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition-duration: 0.4s;
+}
+
+.main_desc {
+    margin: 5% 0% 0% 0%;
+    height: 400px;
+    width: 50%;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 5%;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition-duration: 0.4s;
+}
+
+.main_totalplayers {
+    margin: 3% 0% 0% 0%;
+    height: 50px;
+    width: 50%;
+    background-color: white; 
+    border-radius: 15px ;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition-duration: 0.4s;
+}
+
+.main_totalplayers h3 {
+    padding: 3.5% 0% 0% 3%;
+}
+
+.main_join {
+    margin: 3% 0% 0% 0%;
+    height: 50px;
+    width: 50%;
+    background-color: darkgrey; 
+}
+
+
+.main_join button {
+    background-color: white; /* Green */
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 10px;
+    transition-duration: 0.4s;
+    margin-left: 33%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+
+button:hover {
+    background-color: black; /* Green */
+    color: white;
+  }
