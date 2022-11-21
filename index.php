@@ -2,7 +2,7 @@
 
 require_once "config.php";
 
-$sql = "SELECT id, name, max_players FROM game_data";
+/*$sql = "SELECT id, name, max_players FROM game_data";
 $result = $db->query($sql);
 
 if ($result->num_rows > 0) {
@@ -12,8 +12,7 @@ if ($result->num_rows > 0) {
   }
 } else {
   echo "0 results";
-}
-
+}*/
 ?>
 
 <!DOCTYPE html>
@@ -29,16 +28,16 @@ if ($result->num_rows > 0) {
 <body>
     <header><h1>Overzicht</h1></header>
     <div class="row_1">
-        <div class="showGame"><a href="details.php"><img src="img/369x400.png"></a></div>
-        <div class="showGame"><a href="details.php"><img src="img/369x400.png"></a></div>
-        <div class="showGame"><a href="details.php"><img src="img/369x400.png"></a></div>
-        <div class="showGame_Last"><a href="details.php"><img src="img/369x400.png"></a></div>
+        <div class="showGame"><a href="details.php?id=1"><img src="img/369x400.png"></a></div>
+        <div class="showGame"><a href="details.php?id=2"><img src="img/369x400.png"></a></div>
+        <div class="showGame"><a href="details.php?id=3"><img src="img/369x400.png"></a></div>
+        <div class="showGame_Last"><a href="details.php?id=4"><img src="img/369x400.png"></a></div>
     </div>
     <div class="row_2">
-        <div class="showDesc"><a>{Gametitle} 1<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, facilis.</a></div>
-        <div class="showDesc"><a>{Gametitle} 2<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, facilis.</a></div>
-        <div class="showDesc"><a>{Gametitle} 3<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, facilis.</a></div>
-        <div class="showDesc_Last"><a>{Gametitle} 4<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, facilis.</a></div>
+        <div class="showDesc"><a>Grand Theft Auto V<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, facilis.</a></div>
+        <div class="showDesc"><a>Overwatch 2<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, facilis.</a></div>
+        <div class="showDesc"><a>Battlefield 2042<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, facilis.</a></div>
+        <div class="showDesc_Last"><a>Call of Duty MW II<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, facilis.</a></div>
     </div>
 </body>
 </html>
