@@ -28,13 +28,18 @@ while($row=mysqli_fetch_array($query))
             <div class="main_info">
                 <div class="main_title"><h3><?php echo $row["name"] ?></h3></div>
                 <div class="main_desc"><a><?php echo $row["game_desc"] ?></a></div>
-                <div class="main_totalplayers"><h3>Maximaal <?php echo $row["max_players"] ?> spelers.</h3></div>
-                <div class="main_join"><button type="button">Join the game!</button></div>
+                <div class="main_totalplayers"><h3>Nog <?php echo $row["max_players"] ?> resterende plekken vrij.</h3></div>
+                <form action='' method='POST' onsubmit="return False">
+                    <div class="main_join"><button type="submit" name="main_join">Join the game!</button></div>
+                </form>
             </div>
         </div>
 </body>
 </html>
-
 <?php
+if(isset($_POST['main_join'])){
+    $player_query = mysqli_query($db, "UPDATE game_data SET max_players = max_players - 1 WHERE id='$id'");
+    echo "<meta http-equiv='refresh' content='0'>";
+}
 }
 ?>
