@@ -2,17 +2,6 @@
 
 require_once "config.php";
 
-/*$sql = "SELECT id, name, max_players FROM game_data";
-$result = $db->query($sql);
-
-if ($result->num_rows > 0) {
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-    echo "id: " . $row["id"]. " - Gamename: " . $row["name"]. " - Max players: " . $row["max_players"]. "<br>";
-  }
-} else {
-  echo "0 results";
-}*/
 ?>
 
 <!DOCTYPE html>
