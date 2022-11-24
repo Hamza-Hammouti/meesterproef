@@ -2,7 +2,7 @@
 
 require_once "config.php";
 
-    $id = 2;
+    $id = $_GET['id'];
 
     $name=$_POST['name'];
     $max_players=$_POST['max_players'];
