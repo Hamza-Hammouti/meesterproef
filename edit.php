@@ -10,7 +10,7 @@ while($row=mysqli_fetch_array($query)){
         $max_players2 = $row["max_players"];
         $game_desc2 = $row["game_desc"];
         ?>
-            <form action="submit.php" method="post">
+            <form action="submit.php?id=<?php echo $row["id"]?>" method="post">
                 <label for="name">Name:</label><br>
                 <input type="text" id="name" name="name" value="<?php echo $name2 ?>"><br>
                 <label for="max_players">Max players:</label><br>
