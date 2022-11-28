@@ -5,7 +5,9 @@ require_once "config.php";
 $id = $_GET['id'];
 $query = mysqli_query($db,"DELETE FROM game_data WHERE id = $id");
 
-echo "De game is verwijderd.";
+echo nl2br("De game is verwijderd. \n Je zal teruggestuurd worden in 5 seconden.");
+header("refresh:5;url=admin.php");
+
 
 ?>
 

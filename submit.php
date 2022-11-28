@@ -10,7 +10,8 @@ require_once "config.php";
 
     $updateItem = mysqli_query($db,"UPDATE game_data SET name='$name', max_players='$max_players', game_desc='$game_desc' WHERE id=$id");
 
-    echo "De gegevens zijn geupdate.";
+    echo nl2br("De gegevens zijn geupdate. \n Je zal teruggestuurd worden in 5 seconden.");
+    header("refresh:5;url=admin.php");
 ?>
 
 <!DOCTYPE html>
