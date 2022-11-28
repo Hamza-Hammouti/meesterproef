@@ -7,7 +7,7 @@ $id = $_GET['id'];
 echo "Weet je zeker dat je dit wilt verwijderen?";
 
 ?>
-<br><hr><button><a href="delete.php?id=<?php echo $id?>">Ja</a></button><button><a href="admin.php">Nee</a></button>
+<br><hr><button><a href="/meesterproef/delete.php?id=<?php echo $id?>">Ja</a></button><button><a href="admin.php">Nee</a></button>
 
 
 <!DOCTYPE html>
