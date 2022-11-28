@@ -7,13 +7,14 @@ $count=1;
 
 if (mysqli_num_rows($show) > 0) {
 	while($row = mysqli_fetch_array($show)){
-  		?><table><b><button><a href="edit.php?id=<?php echo $row["id"]?>">Edit</a></button><button><a href="confirm.php?id=<?php echo $row["id"]?>">Delete</a></button><?php echo " ". $row["id"]?></b><?php echo " - " .$row["name"]." - " ?> <b> <?php echo $row["max_players"];?></b></table>
+  		?><table><b><button><a href="/meesterproef/edit.php?id=<?php echo $row["id"]?>">Edit</a></button><button><a href="confirm.php?id=<?php echo $row["id"]?>">Delete</a></button><?php echo " ". $row["id"]?></b><?php echo " - " .$row["name"]." - " ?> <b> <?php echo $row["max_players"];?></b><br></table>
         
         <?php
         $count=$count+1;
 	}
 }
 ?>
+<br><button><a href="/meesterproef/create.php">Create</a></button>
 
 <!DOCTYPE html>
 <html lang="en">
