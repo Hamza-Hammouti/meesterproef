@@ -1,5 +1,5 @@
 * {
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Sarabun', sans-serif;
 }
 
 header {
@@ -157,9 +157,9 @@ header h1 {
     transition-duration: 0.4s;
     margin-left: 33%;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  }
+}
 
 button:hover {
     background-color: black; /* Green */
     color: white;
-  }
+}
