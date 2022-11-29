@@ -9,13 +9,13 @@ $show = mysqli_query($db,"SELECT * FROM game_data");
 <?php
 if (mysqli_num_rows($show) > 0) {
 	while($row = mysqli_fetch_array($show)){
-  		?><table><b><div class="adminGame"><a href="/meesterproef/edit.php?id=<?php echo $row["id"]?>" class="editButton">EDIT</a><a href="/meesterproef/confirm.php?id=<?php echo $row["id"]?>" class="editButton2">DELETE</a><?php echo " ". $row["id"]?></b><?php echo " - " .$row["name"]." - " ?> <b> <?php echo $row["max_players"];?></div></b><br></table>
+  		?><table><b><div class="adminGame"><a href="/meesterproef/edit.php?id=<?php echo $row["id"]?>" class="editButton">EDIT</a><a href="/meesterproef/confirm.php?id=<?php echo $row["id"]?>" class="editButton2">DELETE</a><?php echo " #". $row["id"]?></b><?php echo " - " .$row["name"]." - " ?> <b> <?php echo $row["max_players"];?></div></b><br></table>
         
         <?php
 	}
 }
 ?>
-<br><a href="/meesterproef/create.php" class="editButton3">Create</a></div>
+<br><a href="/meesterproef/create.php" class="editButton3">CREATE</a></div>
 
 <!DOCTYPE html>
 <html lang="en">

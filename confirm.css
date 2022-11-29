@@ -1,0 +1,61 @@
+html {
+    background-color: #292F44;
+    color: white;
+    font-family: 'Sarabun', sans-serif;
+}
+
+.confirm {
+    width: 20%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.yesOrNo {
+    width: 14%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+.choiceYes, .choiceNo {
+    background:linear-gradient(to right, #222736 5%, #222736 100%);
+	border-radius:9px;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:10px;
+	padding:6px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #000000;
+}
+
+.choiceYes:hover, .choiceNo:hover {
+	background:linear-gradient(to right, #292F44 5%, #292F44 100%);
+	background-color:#292F44;
+}
+.choiceYes:active, .choiceNo:active {
+	position:relative;
+	top:1px;
+}
+
+.choiceYes {
+    margin-right: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-shadow: black 4px 2px 4px;
+}
+
+.container {
+    border: 0.5px solid black;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5%;
+    border-radius: 10px;
+    background-color: #3F4364;
+    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.267);
+}
