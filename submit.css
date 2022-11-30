@@ -4,26 +4,23 @@ html {
     font-family: 'Sarabun', sans-serif;
 }
 
-input, textarea {
-    background-color: #292F44;
-    margin-bottom: 2%;
-    color: white;
-    border-radius: 5px;
-}
-
-label {
-    font-size: 15px;
-    text-shadow: black 2px 2px 4px;
-}
-
-form {
-    width: 28%;
-    padding: 2%;
+.container {
+    width: 25%;
+    text-align: center;
     margin: 0 auto;
+    margin-top: 5%;
     background-color: #3F4364;
     border-radius: 10px;
     box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.267);
-    margin-top: 3%;
     border: 0.5px solid black;
-    
+    padding: 1% 1% 1% 1%;
+}
+
+.redirect {
+    margin-top: 1%;
+    text-align: center;
+}
+
+a {
+    color: white;
 }

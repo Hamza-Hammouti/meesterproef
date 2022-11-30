@@ -26,9 +26,9 @@ while($row=mysqli_fetch_array($query))
         </div>
         <div class="right-half">
             <div class="main_info">
-                <div class="main_title"><h3><?php echo $row["name"] ?></h3></div>
+                <div class="main_title"><a><?php echo $row["name"] ?></a></div>
                 <div class="main_desc"><a><?php echo $row["game_desc"] ?></a></div>
-                <div class="main_totalplayers"><h3>Nog <?php echo $row["max_players"] ?> resterende plekken vrij.</h3></div>
+                <div class="main_totalplayers"><a>Nog <?php echo $row["max_players"] ?> resterende plekken vrij.</a></div>
                 <form action='' method='POST' onsubmit="return False">
                     <div class="main_join"><button type="submit" name="main_join">Join the game!</button></div>
                 </form>

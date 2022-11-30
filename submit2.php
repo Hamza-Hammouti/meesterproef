@@ -1,14 +1,4 @@
-<?php
 
-require_once "config.php";
-
-    $name=$_POST['name'];
-    $max_players=$_POST['max_players'];
-    $game_desc=$_POST['game_desc'];
-
-    $createItem = mysqli_query($db, "INSERT INTO game_data (id, name, max_players, game_desc, pic_name, home_pic) VALUES (NULL, '$name', '$max_players', '$game_desc', NULL, NULL)");
-    echo "De informatie is toegevoegd.";
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,8 +7,25 @@ require_once "config.php";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Submit</title>
+    <link rel="stylesheet" href="submit.css">
 </head>
 <body>
-    
+    <?php
+
+    require_once "config.php";
+
+        $name=$_POST['name'];
+        $max_players=$_POST['max_players'];
+        $game_desc=$_POST['game_desc'];
+
+        $createItem = mysqli_query($db, "INSERT INTO game_data (id, name, max_players, game_desc, pic_name, home_pic) VALUES (NULL, '$name', '$max_players', '$game_desc', NULL, NULL)");
+        header("refresh:5;url=admin.php");
+    ?>
+    <div class="container">
+        <a>De informatie is toegevoegd.<br> Je zal teruggestuurd worden in 5 seconden.</a>
+    </div>
+    <div class="redirect">
+        <a href="admin.php">of klik hier.</a>
+    </div>
 </body>
 </html>

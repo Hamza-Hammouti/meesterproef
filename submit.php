@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="submit.css">
+    <title>Submit</title>
+</head>
+<body>
 <?php
 
 require_once "config.php";
@@ -10,19 +20,14 @@ require_once "config.php";
 
     $updateItem = mysqli_query($db,"UPDATE game_data SET name='$name', max_players='$max_players', game_desc='$game_desc' WHERE id=$id");
 
-    echo nl2br("De gegevens zijn geupdate. \n Je zal teruggestuurd worden in 5 seconden.");
     header("refresh:5;url=admin.php");
-?>
+?>   
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Submit</title>
-</head>
-<body>
-    
+    <div class="container">
+        <a>De gegevens zijn geupdate. <br> Je zal teruggestuurd worden in 5 seconden.</a>
+    </div>
+    <div class="redirect">
+        <a href="admin.php">of klik hier.</a>
+    </div>
 </body>
 </html>

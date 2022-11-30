@@ -7,7 +7,7 @@ $id = $_GET['id'];
 ?>
 <div class="container">
     <div class="confirm"><a>Weet je zeker dat je dit wilt verwijderen?</a></div>
-    <br><div class="yesOrNo"><button class="choiceYes"><a href="/meesterproef/delete.php?id=<?php echo $id?>">Ja</a></button><button class="choiceNo"><a href="admin.php">Nee</a></button></div>
+    <br><div class="yesOrNo"><a href="/meesterproef/delete.php?id=<?php echo $id?>"><button class="choiceYes">Ja</button></a><a href="admin.php"><button class="choiceNo">Nee</button></a></div>
 </div>
 
 

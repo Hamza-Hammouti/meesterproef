@@ -16,7 +16,7 @@ while($row=mysqli_fetch_array($query)){
                 <label for="max_players">Max players:</label><br>
                 <input type="text" id="max_players" name="max_players" value="<?php echo $max_players2 ?>"><br>
                 <label for="game_desc">Game description:</label><br>
-                <textarea id="game_desc" name="game_desc" rows="4" cols="50"><?php echo $game_desc2 ?></textarea><br><br>
+                <textarea id="game_desc" name="game_desc" rows="10" cols="54"><?php echo $game_desc2 ?></textarea><br><br>
                 <input type="submit" value="Save">
             </form>
         <?php
