@@ -2,6 +2,19 @@
 
 require_once "config.php";
 
+$show = mysqli_query($db,"SELECT * FROM game_data");
+?>
+
+
+<?php
+/*if (mysqli_num_rows($show) > 0) {
+	while($row = mysqli_fetch_array($show)){
+  		?><table><b><div class="adminGame"><a href="/meesterproef/edit.php?id=<?php echo $row["id"]?>" class="editButton">EDIT</a><a href="/meesterproef/confirm.php?id=<?php echo $row["id"]?>" class="editButton2">DELETE</a><?php echo " #". $row["id"]?></b><?php echo " - " .$row["name"]." - " ?> <b> <?php echo $row["max_players"];?></div></b><br></table>
+        
+        <?php
+	}
+}*/
+
 ?>
 
 <!DOCTYPE html>
@@ -16,17 +29,22 @@ require_once "config.php";
 </head>
 <body>
     <header><h1>Overzicht</h1></header>
-    <div class="row_1">
+    <div class="containertje">
         <div class="showGame"><a href="details.php?id=1"><img src="img/369x400.png"></a></div>
-        <div class="showGame"><a href="details.php?id=2"><img src="img/369x400.png"></a></div>
-        <div class="showGame"><a href="details.php?id=3"><img src="img/369x400.png"></a></div>
-        <div class="showGame_Last"><a href="details.php?id=4"><img src="img/369x400.png"></a></div>
-    </div>
-    <div class="row_2">
         <div class="showDesc"><a>Grand Theft Auto V<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, facilis.</a></div>
-        <div class="showDesc"><a>Overwatch 2<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, facilis.</a></div>
-        <div class="showDesc"><a>Battlefield 2042<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, facilis.</a></div>
-        <div class="showDesc_Last"><a>Call of Duty MW II<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, facilis.</a></div>
     </div>
+    <div class="containertje">
+        <div class="showGame"><a href="details.php?id=1"><img src="img/369x400.png"></a></div>
+        <div class="showDesc"><a>Grand Theft Auto V<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, facilis.</a></div>
+    </div>
+    <div class="containertje">
+        <div class="showGame"><a href="details.php?id=1"><img src="img/369x400.png"></a></div>
+        <div class="showDesc"><a>Grand Theft Auto V<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, facilis.</a></div>
+    </div>
+    <div class="containertje">
+        <div class="showGame"><a href="details.php?id=1"><img src="img/369x400.png"></a></div>
+        <div class="showDesc"><a>Grand Theft Auto V<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, facilis.</a></div>
+    </div>
+    <br> 
 </body>
 </html>
