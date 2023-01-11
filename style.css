@@ -18,54 +18,7 @@ header {
     color: white;
 }
 
-header h1 {
-    text-align: center;
-    padding-top: 2%;
-}
 
-.showGame {
-    width: 24.25%;
-    height: 400px;
-    background-color: red;
-    margin: 1% 1% 0% 0%;
-    float: left;
-    overflow: hidden;
-}
-
-.showGame_Last {
-    width: 24.25%;
-    height: 400px;
-    background-color: red;
-    margin: 1% 0% 0% 0%;
-    float: left;
-}
-
-
-
-.showDesc_Last, .showDesc {
-    width: 24.25%;
-    height: 100px;
-    background-color: #3F4364;
-    margin: 1% 0% 0% 0%;
-    float: left;
-    overflow: hidden;
-    color: white;
-    box-sizing: border-box;
-    padding: 1%;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-
-.showDesc {
-    margin: 1% 1% 0% 0%;
-}
-
-.showDesc h3 {
-    padding-left: 2%;
-}
-
-.showDesc_Last h3 {
-    padding-left: 2%;
-}
 
 .left-half, .right-half {
     height: 728px;
@@ -75,7 +28,7 @@ header h1 {
 }
 
 .main_pic {
-    margin: 13% 0% 0% 35%;
+    margin: 2.5% 0% 0% 35%;
     height: 390px;
     width: 52%;
     background-color: white;
@@ -165,5 +118,83 @@ header h1 {
 
 .main_join button:hover {
     background-color: black; /* Green */
+    color: white;
+}
+
+.containertje {
+    border: 0px solid white;
+    width: 24.25%;
+    height: 520px;
+    margin: 1% 0.375% 0.75% 0.375%;
+    float: left
+}
+
+.showGame {
+    width: 100%;
+    height: 364px;
+    background-color: darkgrey;
+    float: left;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.showGame img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.showDesc {
+    width: 100%;
+    height: 100px;
+    background-color: #3F4364;
+    margin: 5% 0% 0% 0%;
+    float: left;
+    overflow: hidden;
+    color: white;
+    box-sizing: border-box;
+    padding: 3%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 10px;
+}
+
+.showDesc {
+    margin: 5% 0% 0% 0%;
+}
+
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+body::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: rgb(57, 57, 57);
+}
+
+.left-half-arrow {
+    width: 3%;
+    height: 2%;
+    margin: 9% 0% 0% 35%;  
+}
+
+header h1 {
+    width: 10%;
+    height: 5%;
+    margin: 0 auto;
+    padding-top: 2%;
+    text-shadow: black 2px 2px 4px;
+}
+
+header a {
+    float: right;
+    margin-right: 2%;
     color: white;
 }

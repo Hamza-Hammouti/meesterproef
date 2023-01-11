@@ -33,7 +33,7 @@
             if (file_exists($path_filename_ext)) {
             ?>
             <div class="container">
-                <a>Dit bestandsnaam bestaat al, verander uw bestandsnaam.<br> U zal teruggestuurd worden in 5 seconden.</a>
+                <a>Dit bestandsnaam bestaat al, verander je bestandsnaam.<br> Je zal teruggestuurd worden in 5 seconden.</a>
             </div>
             <div class="redirect">
                 <a href="create.php">of klik hier.</a>
@@ -46,7 +46,7 @@
              move_uploaded_file($temp_name,$path_filename_ext);
              ?>
             <div class="container">
-                <a>De informatie is toegevoegd.<br> U zal teruggestuurd worden in 5 seconden.</a>
+                <a>De informatie is toegevoegd.<br> Je zal teruggestuurd worden in 5 seconden.</a>
             </div>
             <div class="redirect">
                 <a href="admin.php">of klik hier.</a>
